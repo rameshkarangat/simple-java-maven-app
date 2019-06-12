@@ -15,6 +15,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+		<repository>
+			<id>servicerepo</id>
+			<name>Service Repository</name>
+			<url>http://localhost:9090/repository/servicerepo</url>
+		</repository>
+		<snapshotRepository>
+			<id>service-snapshot</id>
+			<name>Service Snapshot Repository</name>
+			<url>http://localhost:9090/repository/service-snapshot</url>
+		</snapshotRepository>
+  </distributionManagement>
+
   <build>
     <plugins>
       <plugin>
